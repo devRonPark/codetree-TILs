@@ -13,11 +13,14 @@ public class Main {
         int n = sc.nextInt();
 
         // 입력값이 평년이라면
+        // 2월 => 28일, 홀수 달에 31일, 짝수 달에 30일
         if (!((n % 4 == 0 && n % 100 == 0) || (n % 4 == 0 && n % 100 == 0 && n % 400 == 0))) {
             if (n == 2) {
                 System.out.println("28");
-            } else {
+            } else if (n % 2 == 1) {
                 System.out.println("31");
+            } else {
+                System.out.println("30");
             }
         }
     }
