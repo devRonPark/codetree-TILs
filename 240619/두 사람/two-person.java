@@ -12,7 +12,11 @@ public class Main {
 
         // equals() : 문자열의 내용이 같은지 비교
         // == : 문자열의 참조값(주소값)이 같은지 비교
-        if (genderOf1.equals("M") || genderOf2.equals("M")) {
+        if (
+            (ageOf1 >= 19 || ageOf2 >= 19)
+            &&
+            (genderOf1.equals("M") || genderOf2.equals("M"))
+        ) {
             System.out.println("1");
         } else {
             System.out.println("0");
