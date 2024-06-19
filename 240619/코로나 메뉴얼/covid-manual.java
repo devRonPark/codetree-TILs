@@ -12,22 +12,29 @@ public class Main {
         String cHasCold = sc.next();
         int cTemperature = sc.nextInt();
 
-        int urgentPatients = 0;
-
+        // 첫 번째 환자가 A 인 경우와 아닌 경우로 분기
+        // 첫 번째 환자가 A라면, 
+        //     적어도 두 환자 중 한 명이 A여야 한다.
+        // 첫 번째 환자가 A가 아니라면,
+        //     두 환자 모두 A여야 한다.
         if (aHasCold.equals("Y") && aTemperature >= 37) {
-            urgentPatients++;
-        }
-        if (bHasCold.equals("Y") && bTemperature >= 37) {
-            urgentPatients++;
-        }
-        if (cHasCold.equals("Y") && cTemperature >= 37) {
-            urgentPatients++;
-        }
-
-        if (urgentPatients >= 2) {
-            System.out.println("E");
+            if (
+                (bHasCold.equals("Y") && bTemperature >= 37) ||
+                (cHasCold.equals("Y") && cTemperature >= 37)
+            ) {
+                System.out.println("E");
+            } else {
+                System.out.println("N");
+            }
         } else {
-            System.out.println("N");
+            if (
+                (bHasCold.equals("Y") && bTemperature >= 37) &&
+                (cHasCold.equals("Y") && cTemperature >= 37)
+            ) {
+                System.out.println("E");
+            } else {
+                System.out.println("N");
+            }
         }
     }
 }
