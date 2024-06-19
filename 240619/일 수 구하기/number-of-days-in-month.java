@@ -8,6 +8,8 @@ public class Main {
 
         if (n == 2) {
             System.out.println("28");
+        } else if (n % 2 == 0) {
+            System.out.println("30");
         } else {
             System.out.println("31");
         }
