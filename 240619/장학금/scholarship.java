@@ -8,7 +8,7 @@ public class Main {
         int midTermScore = sc.nextInt();
         int finalTermScore = sc.nextInt();
 
-        if (midTermScore >= 90) {
+        if (midTermScore >= 90 && midTermScore <= 100) {
             if (finalTermScore >= 95 && finalTermScore <= 100)
                 System.out.println("100000");
             else if (finalTermScore >= 90)
