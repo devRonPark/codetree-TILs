@@ -11,12 +11,18 @@ public class Main {
         // y % 4 != 0 => 평년
         // y % 100 == 0 && y % 400 != 0 => 평년
         if (y % 4 == 0) {
-            System.out.println("true");
+            if (y % 100 == 0) {
+                if (y % 400 == 0) {
+                    System.out.println("true");
+                } else {
+                    System.out.println("false");
+                }
+            } else {
+                System.out.println("true");
+            }
         }
         else {
-            if (y % 100 == 0 && y % 400 != 0) {
-                System.out.println("false");
-            }
+            System.out.print("false");
         } 
     }
 }
