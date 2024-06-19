@@ -15,7 +15,7 @@ public class Main {
             System.out.println(a);
         }
         // b 가 중앙값인 경우 :
-        else if (b <= a && b >= c || b <= c && b >= c) {
+        else if (b <= a && b >= c || b <= c && b >= a) {
             System.out.println(b);
         } 
         else {
