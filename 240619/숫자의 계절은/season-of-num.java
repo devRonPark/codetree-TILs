@@ -9,9 +9,9 @@ public class Main {
 
         // 3, 4, 5 : Spring % 10 => 3, 4, 5
         // 6, 7, 8 : Summer % 10 => 6, 7, 8
-        // 9, 10, 11 : Fall % 10 => 9, 10, 11
+        // 9, 10, 11 : Fall % 10 => 9, 0, 1
         // 12, 1, 2 : Winter % 10 => 1, 2
-        if (month % 10 > 8)
+        if (month % 10 > 8 || (month % 10 < 2 && month >= 10))
             System.out.println("Fall");
         else if (month % 10 > 5)
             System.out.println("Summer");
