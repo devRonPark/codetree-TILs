@@ -13,9 +13,9 @@ public class Main {
         // equals() : 문자열의 내용이 같은지 비교
         // == : 문자열의 참조값(주소값)이 같은지 비교
         if (
-            (ageOf1 >= 19 || ageOf2 >= 19)
-            &&
-            (genderOf1.equals("M") || genderOf2.equals("M"))
+            (ageOf1 >= 19 && genderOf1.equals("M"))
+            ||
+            (ageOf2 >= 19 && genderOf2.equals("M"))
         ) {
             System.out.println("1");
         } else {
