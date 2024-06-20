@@ -12,7 +12,7 @@ public class Main {
         // 5개의 숫자 입력에 대해,
         for (i = 1; i <= 5; i++) {
             n = sc.nextInt();
-            if (i % 2 == 0) {
+            if (n % 2 == 0) {
                 cntOfEven++;
             }
         }
