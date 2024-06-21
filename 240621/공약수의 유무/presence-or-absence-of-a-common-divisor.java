@@ -11,8 +11,8 @@ public class Main {
         boolean satisfied = false;
 
         for (int i = a; i <= b; i++) {
-            // 1920 이나 2880 을 나눌 수 있는 정수가 하나라도 존재하면 
-            if (1920 % i == 0 || 2880 % i == 0) {
+            // 1920 과 2880 을 나눌 수 있는 정수가 하나라도 존재하면, 
+            if (1920 % i == 0 && 2880 % i == 0) {
                 satisfied = true;
                 break;
             }
