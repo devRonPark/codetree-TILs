@@ -7,13 +7,17 @@ public class Main {
 
         int n = sc.nextInt();
         boolean satisfied = false; // 합성수 여부 판단
+        
         // 2부터 (n - 1)까지 주어진 입력값을 나누기
         for (int i = 2; i < n; i++) {
-            if (n % i == 0) { // 하나라도 나누어 떨어지면 합성수
+            // 하나라도 나누어 떨어지면 합성수
+            if (n % i == 0) { 
                 satisfied = true;
                 break;
             }
         }
+
+        // 출력
         System.out.println(satisfied ? 'C' : 'N'); 
     
     }
