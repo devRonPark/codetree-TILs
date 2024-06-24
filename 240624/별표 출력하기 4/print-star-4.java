@@ -7,15 +7,16 @@ public class Main {
 
         int n = sc.nextInt();
 
-        // (n, i) => (2, 3), (3, 5)
-        // n * 2 - 1
+        // 라인 별 출력할 별의 개수
         int cnt = n;
+        // 총 (2n - 1) 개의 라인에 걸쳐 별표 출력
         for (int i = 0; i < n * 2 - 1; i++) {
             for (int j = 0; j < cnt; j++) {
                 System.out.print("* ");
             }
             System.out.println();
 
+            // 라인 증가에 따른 별의 개수 증감 조건 
             if (i < (n - 1)) {
                 cnt--;
             } 
