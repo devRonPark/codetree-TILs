@@ -24,9 +24,6 @@ public class Main {
 
         // 250 이상의 정수가 없다면, cnt 값은 주어진 정수의 개수와 동일
         if (cnt == 10) {
-            for (int i = 0; i < 10; i++) {
-                sum += arr[i];
-            }
             avg = (double) sum / 10;
         }
         else {
