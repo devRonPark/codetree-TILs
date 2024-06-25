@@ -5,9 +5,9 @@ public class Main {
         // 여기에 코드를 작성해주세요.
         Scanner sc = new Scanner(System.in);
 
-        String[] arr = new String[10];
+        char[] arr = new char[10];
         for (int i = 0; i < 10; i++) {
-            arr[i] = sc.next();
+            arr[i] = sc.next().charAt(0);
         }
 
         System.out.print(arr[1] + " " + arr[4] + " " + arr[7]);
