@@ -6,14 +6,15 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         int n = sc.nextInt();
-        int[] arr = new int[101];
+        // 5번째와 10번째는 분명 5의 배수이므로, 10번 안에 항상 종료
+        int[] arr = new int[10];
         int cntMultipleOf5 = 0;
 
-        for (int i = 1; i <= 100; i++) {
-            arr[i] = n * i;
+        for (int i = 0; i < 10; i++) {
+            arr[i] = n * (i+1);
         }
 
-        for (int i = 1; i <= 100; i++) {
+        for (int i = 0; i < 10; i++) {
             System.out.print(arr[i] + " ");
             
             if (arr[i] % 5 == 0) {
