@@ -21,7 +21,7 @@ public class Main {
                 cntMultipleOf5++;
             }
 
-            if (cntMultipleOf5 == 2) {
+            if (cntMultipleOf5 >= 2) {
                 break;
             }
         }
